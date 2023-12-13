@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?vgtkbs');
+    src: url('../fonts/icomoon.eot?vgtkbs#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?vgtkbs') format('truetype'),
+        url('../fonts/icomoon.woff?vgtkbs') format('woff'),
+        url('../fonts/icomoon.svg?vgtkbs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    outline: none;
+}
+i{
+    font-style: normal;
+    font-family: 'icomoon';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.w{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+aside[class="category"] {
+    position: fixed;
+    right: 50%;
+    top: 350px;
+    margin-right: 610px;
+
+}
+aside[class="category"] ul li {
+    position: relative;
+    box-sizing: content-box;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 31px;
+    background-color: #fff;
+    color: #666;
+}
+
+aside[class="category"] ul li::before{
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 1px;
+    top: 30px;
+    right: 6px;
+    background-color: #ededed;
+}
+
+aside[class="category"] ul li:hover {
+    color: #fff;
+    background-color: #c81623;
+}
+aside[class="category"] ul li:hover::before{
+    background-color: transparent;
+}
+
+.shortcut{
+    color: #666;
+    height: 30px;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.shortcut a{
+    color: #666666;
+}
+.shortcut .log li{
+    float: left;
+    padding: 0 10px;
+    
+}
+
+
+.shortcut .log li:last-child a{
+    color: red;
+}
+
+
+
+.shortcut .module li {
+    box-sizing: content-box;
+    float: right;
+   
+}
+
+.shortcut .module li a {
+    height: 12px;
+    padding: 0 10px;
+    border-right: 1px solid #666666;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.shortcut .module li:first-child a{
+     border: 1px solid transparent;
+     
+}
+
+.shortcut .module li:nth-child(-n+3) a{
+    position: relative;
+    
+    padding-right: 25px;
+    
+}
+
+.shortcut .module li:nth-child(6) a {
+    position: relative;
+    
+    padding-right: 25px;
+}
+
+.shortcut .module li i{
+    position: absolute;
+    right: 8px;
+    font-size: 14px;
+}
+.shortcut a:hover {
+    color: #c81623;
+}
+
+header[class="w clearfix"]{
+    
+    margin-top: 25px;
+    
+}
+
+header[class="w clearfix"]>img{
+    float: left;
+}
+
+header[class="w clearfix"] .search{
+    float: left;
+    margin-left: 170px;
+}
+
+header[class="w clearfix"] .search input[type="search"]{
+    float: left;
+    height: 36px;
+    width: 460px;
+    border: 2px solid #c81623;
+    color: #666;
+    padding-left: 10px;
+}
+
+
+header[class="w clearfix"] .search input[type="button"] {
+    height: 36px;
+    width: 80px;
+    border: 0px solid transparent;
+    background-color: #c81623;
+    color:#fff ;
+    
+}
+
+header[class="w clearfix"] .search ul{
+    margin-left: 10px;
+}
+header[class="w clearfix"] .search ul li{
+    float: left;
+    margin-right: 25px;
+    margin-top: 5px;
+    
+}
+
+header[class="w clearfix"] .search li a{
+    color: #666;
+    font-size: 12px;
+}
+header[class="w clearfix"] .search li a:hover {
+    color: #c81623;
+}
+
+header[class="w clearfix"] .cart{
+       position: relative;
+        float: right;
+        margin-right: 60px;
+        width: 140px;
+        height: 36px;
+        
+}
+
+header[class="w clearfix"] .cart input {
+    width: 100%;
+    height: 100%;
+    color: #666;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+
+}
+header[class="w clearfix"] .cart::before{
+     position: absolute;
+     font-family: 'icomoon';
+     content: '';
+     top: 11px;
+     left: 13px;
+     color: #d84a4a;
+
+}
+
+header[class="w clearfix"] .cart::after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '';
+    top: 11px;
+    right: 10px;
+    color: #999999;
+}
+ 
+nav[class="line"]{
+    height: 45px;
+    border-bottom:2px #c81623 solid ;
+}
+nav div[class="w"]{
+    margin-top: 25px;
+}
+
+nav div[class="w"] li{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 50px;
+    
+}
+
+nav div[class="w"] li a:hover{
+    color: #c81623;
+
+}
+
+nav div[class="w"] li:first-child{
+    width: 210px;  
+    margin-left: 0px;
+    background-color:#b1191a;
+    color: #fff;
+    padding: 0px 50px;
+}
+
+section[class="sort w clearfix"] .goods{
+    float: left;
+    
+}
+
+section[class="sort w clearfix"] .goods ul li{
+    
+    width: 210px;
+    height: 31px;
+    padding-left: 10px;
+    color: #fff;
+    background-color: #c81623;
+    font-size: 14px;
+    line-height: 31px;
+}
+
+section[class="sort w clearfix"] .goods ul li:hover{
+    background-color: #fff;
+    color: #c81623;
+}
+
+section[class="sort w clearfix"] .goods ul li:hover::after {
+    color: #c81623;
+}
+
+section[class="sort w clearfix"] .goods ul li::after{
+    float: right;
+    margin-right: 5px;
+    content:"\e903";
+    font-family: "icomoon";
+    color: #f7f7f7;
+}
+
+section[class="sort w clearfix"] .pic img{
+    float:left;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 710px;
+    height: 455px;
+}
+
+section[class="sort w clearfix"] aside {
+    width: 259px;
+    height: 455px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 9px;
+    border-collapse: collapse;
+    border: 1px #e8e8e7 solid;
+    color: #666;
+}
+
+section[class="sort w clearfix"] aside header{
+    height: 30px;
+    border-bottom: 1px #e8e8e7 dotted;
+}
+section[class="sort w clearfix"] aside header h4::after{
+    float: right;
+    margin-left: 2px;
+    content: "\e903";
+    font-family: "icomoon";
+}
+
+section[class="sort w clearfix"] aside header h3{
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+section[class="sort w clearfix"] aside header h4{
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+section[class="sort w clearfix"] aside>ul li{
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    padding-left: 10px;
+
+}
+
+
+section[class="sort w clearfix"] aside section[class="category clearfix"] ul li{
+    float: left;
+    height: 70px;
+    width: 65px;
+    position: relative;
+    border:1px #e8e8e7 solid;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+
+section[class="sort w clearfix"] aside section[class="category clearfix"] ul li i{
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    font-size: 36px;
+    color: #c81623;
+      
+}
+
+section[class="sort w clearfix"] aside section[class="category clearfix"] ul li h4{
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 45px;
+    
+}
+
+section[class="sort w clearfix"] aside section[class="pic"]{
+    width: 100%;
+    height: 81px;
+    margin-top: 10px;
+    background-image: url(../images/newautumn.png);
+    background-position: -10px -10px;
+    background-size: 277px 105px;
+    
+}
+
+section[class="recommend w clearfix"] ul{
+    margin-top: 10px;
+}
+
+section[class="recommend w clearfix"] ul li:first-child{
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color:#5c5251;
+}
+
+section[class="recommend w clearfix"] ul li:first-child::before{
+    float: left;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-size: 60px;
+    content: "";
+    font-family: "icomoon";
+    color: #fff;
+
+}
+
+section[class="recommend w clearfix"] ul li:first-child h2{
+    margin-top: 100px;
+    margin-left: 55px;
+    font: 400 20px "MicrosoftYaHei";
+    color: #fff;
+    
+}
+
+section[class="recommend w clearfix"] ul li{
+    float: left;
+    width: 247px;
+    height: 163px;
+    background-color: #ebebeb;    
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(n+3) {
+    position: relative;
+
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(n+3)::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+    top: 10px;
+    
+}
+
+section[class="recommend w clearfix"] ul li h3:first-of-type{
+    font:700 16px "MicrosoftYaHei";
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+section[class="recommend w clearfix"] ul li h4{
+    display: inline;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 20px;
+    padding: 0 3px;
+    color: #fff;
+    background-color: blue;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(2) h4{
+    background-color:#00a0e8 ;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(3) h4 {
+    background-color: #5fb200;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(3) a {
+    background-color: #5fb200;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(4) h4 {
+    background-color: #e2162f;
+}  
+section[class="recommend w clearfix"] ul li:nth-child(4) a {
+    background-color: #e2162f;
+}
+section[class="recommend w clearfix"] ul li:nth-child(5) h4 {
+    background-color: #0085fb;
+}
+section[class="recommend w clearfix"] ul li:nth-child(5) a {
+    background-color: #0085fb;
+}
+section[class="recommend w clearfix"] ul li h5{
+    box-sizing: content-box;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #666;
+}
+
+section[class="recommend w clearfix"] ul li a {
+        
+        display: inline;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 20px;
+        padding: 0 15px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: blue;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(2){
+    background-image: url(../images/good.gif) ;
+    background-repeat: no-repeat;
+    background-position: 130px 20px; 
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(3) {
+    background-image: url(../images/wei.gif);
+    background-repeat: no-repeat;
+    background-position: 115px 20px;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(4) {
+    background-image: url(../images/clothes.gif);
+    background-repeat: no-repeat;
+    background-position: 110px 20px;
+}
+
+section[class="recommend w clearfix"] ul li:nth-child(5) {
+    background-image: url(../images/watch.gif);
+    background-repeat: no-repeat;
+    background-position: 115px 10px;
+}

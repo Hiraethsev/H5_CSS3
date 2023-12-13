@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuDou</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .hot{
+            margin: auto;
+            position: relative;
+            height: 250px;
+            width: 400px;
+            background-color: pink;
+            
+        }
+        .hot .pic{
+            
+            height: 100%;
+            width: 100%;
+        }
+      
+      
+        .hot .screen{
+          display: none;
+          /* visibility: hidden; */
+          position: absolute;
+          background-color:rgba(0, 0, 0, .3);
+          top: 0px;
+          height: 100%;
+         width: 100%;
+        
+          background-image: url(arr.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+        .hot:hover .screen{
+            display: block;
+            /* visibility: visible; */
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="hot">
+     <img src="tudou.jpg"class="pic">
+
+    
+        <div class="screen">
+
+        </div>
+        
+    </div>
+
+</body>
+</html>

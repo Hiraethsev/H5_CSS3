@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .big{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 30px auto;
+            background-color: pink;
+        }
+        .big:hover .hid{
+            display: block ;
+        }
+        .big .hid{
+            display: none;
+            position: absolute;
+            top:110px;
+            background-color: aqua;
+        }
+        .big .box{
+            width: 100px;
+            height: 100px;
+        }
+        .big .tri{
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            height: 0;
+            width: 0;
+            border: 10px transparent solid;
+            border-bottom-color: aqua;
+            
+        }
+        .big img{
+            height: 50px;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="big">
+
+        <img src="qaq.jpg">
+        <span>好困</span>
+        <div class="hid">
+            <div class="tri">
+            </div>
+            <div class="box">
+                hhhhhh
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

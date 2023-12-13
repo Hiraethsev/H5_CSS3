@@ -1,0 +1,554 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #f3f5f7;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    /* 定位被遮住，设置z-index值 */
+    z-index: 9999;
+    right: 50%;
+    margin-right: 650px;
+    top:300px;
+    width: 133px;
+    height: 392px;
+    padding: 16px 25px;
+    background-color: white;
+
+    line-height: 36px;
+    font-size: 14px;
+}
+.sidebar a:hover{
+    color: #00a4ff;
+}
+.topic{
+    position: sticky;
+    top:0px;
+    height: 100px;
+    z-index: 8000;
+    text-align: center;
+    background-color: #f3f5f7;
+}
+.topic>div{
+    margin: 0 auto;
+    width: 1120px;
+    height: 100px;
+    
+}
+
+.topic .logo1{
+    float: left;
+    margin: 28px 0px;
+    margin-right: 60px;
+}
+
+.topic .choose{
+    float: left;
+    margin-top: 30px;
+}
+
+.topic .choose a{
+    margin-right: 40px ;
+    padding-bottom: 10px;
+    color: #050505;
+    font: 18px/38px "MicrosoftYaHei";
+}
+.topic .choose a:hover {
+   
+    border-bottom:1px solid #00a4ff;
+}
+                
+.topic .search{
+    float: left;
+    height: 100px;
+    
+}
+.topic .search .text1{
+    float: left;
+    height: 40px;
+    width: 340px;
+    margin-top: 28px;
+    margin-left: 50px;
+    margin-right: 0px;
+
+    padding-left: 20px;
+    border: 2px solid #00a4ff;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #bfbfbf;
+    /* 去除输入时的边框 */
+    outline: none;
+}
+
+.topic .search .btn1{
+    
+    float: left;
+    height: 40px;
+    width: 50px;
+    margin-top: 28px;
+    margin-left: 0px;
+    border: 2px solid #00a4ff;
+    /* button的高度包含边框的高度，而文本框text则不包含边框高度。这就导致input高度会比button高两像素。 */
+    box-sizing: content-box;
+
+    background-color: #00a4ff;
+    background-image: url(image/搜索\ \(1\).png);
+    /* 调整图片大小 */
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.user img{
+    float: left;
+    margin-top: 35px;
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.user h5{
+    font:  400 14px/100px "MicrosoftYahei";
+    color: #666;
+}
+
+.big{
+    background-color:#1c036c ;
+}
+.big .normalPic{
+    margin: 0 auto;
+    background-image: url(image/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 420px;
+    width: 1200px;
+
+}
+
+.big .normalPic .con{
+
+    background-color: rgba(0, 0, 0, .3);
+    float: left;
+    width: 190px;
+    height: 420px;
+}
+.big .normalPic .con .var{
+    float: left;
+    margin: 15px 20px 28px;
+}
+.big .normalPic .con .im {
+    float: right;
+    margin: 0px 20px 28px;
+    
+}
+.big .normalPic .con .im li{
+    height: 14px;
+    margin: 23px 0px 30px;
+    
+}
+.big .normalPic .con .im li img{
+    height: 10px;
+    width: 6px;
+    
+}
+
+.big .normalPic .con .var a{
+    
+    color: white;
+    font-size: 14px;
+    line-height: 44px;
+
+}
+
+.big .normalPic .con .var a:hover {
+
+    color: #00a4ff;
+     
+
+}
+
+.big .normalPic .myClass{
+    height: 300px;
+    width: 228px;
+    float: right;
+    margin: 50px 0px 70px;
+    background-color: white;
+}
+
+.big .normalPic .myClass h4{
+    background-color: #9bceea;
+    color: white;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+   
+}
+.big .normalPic .myClass ul{
+  
+    margin:  5px 20px;
+}
+.big .normalPic .myClass ul li>div{
+    height: 30px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.big .normalPic .myClass ul li div a{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.big .normalPic .myClass ul li div div{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.big .normalPic .myClass>div{
+    
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    margin: 5px 15px;
+}
+
+.big .normalPic .myClass>div a{
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #00a4ff;
+}
+
+.interest{
+   
+    margin: 5px auto 35px;
+    height:60px;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(118,118,118,0.2 );
+        
+}
+
+.interest .mold{
+    float: left;
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.interest .mold a{
+    padding: 0px 30px;
+    border-left: 1px solid #bfbfbf;
+}
+
+.interest .mold a:hover{
+    color: #00a4ff;
+    
+}
+
+.interest .mold .first {
+    border-left: 1px solid transparent;
+    
+}
+
+.interest .change {
+    float: right;
+    font-size: 14px;
+    line-height: 60px;
+    
+}
+
+.interest .change a{
+    color: #00a4ff;
+    padding-right: 20px;
+}
+
+.specialty{
+
+        margin: 0px auto 0px;
+        
+        width: 1200px;
+        
+}
+ 
+.specialty .tit{
+    height: 40px;
+}
+
+.specialty .tit h4{
+    float: left;
+    font-weight: 400;
+    font-size: 20px;
+    color: #494949;
+}
+
+.specialty .tit a {
+    float: right;
+    margin-top: 7px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.specialty .project>div{
+    float: left;
+    height: 270px;    
+    width: 233px; 
+    margin-right: 10px;
+    margin-bottom: 15px ;
+}
+.specialty .project>div{
+    position: relative;
+}
+.specialty .project>div>div {
+    
+    width: 228px;
+    height: 270px;
+    background-color: white;
+    margin: 0px;
+    
+}
+.specialty .project>div>div .new{
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+.specialty .project>div>div .pic{
+    width: 228px;
+    height: 155px;
+    margin: 0px;
+    
+}
+
+.specialty .project>div>div>a>h4{
+
+    margin: 22px 20px 17px 25px;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    
+}
+
+.specialty .project>div>div>div{
+    height: 12px;
+    font-size: 12px;
+    margin: 0px 20px 0px 25px;
+}
+
+.specialty .project>div>div>div>h4{
+    color:#ff7c2d ;
+    float: left;
+    margin-right: 10px;
+}
+
+.specialty .project>div>div>div>h5 {
+    color: #606060;
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.specialty .project>div>div>div h3 {
+    font-size: 12px;
+    color: #606060;
+    float: left;
+       
+}
+
+.intro {
+
+    margin: 23px auto 0px;
+    width: 1200px;
+
+}
+
+.intro .tit {
+    height: 40px;
+}
+
+.intro .tit h4 {
+    float: left;
+    font-weight: 400;
+    font-size: 20px;
+    color: #494949;
+}
+
+.intro .tit >a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 5px;
+}
+.intro .mold {
+    float: left;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 350px;
+}
+
+.intro .mold a {
+    padding-right: 70px;
+    color: #a5a5a5;
+    
+}
+
+.intro .mold a:hover {
+    color: #00a4ff;
+}
+
+.intro>div {
+    margin-top: 20px;
+}
+.intro>div>img{
+    float: left;
+    width: 228px;
+    height: 392px;
+    margin-right: 15px;
+}
+.intro>div .ugui{
+    height: 392px;
+}
+.intro>div .ugui>img{
+    margin-bottom: 18px;
+}
+.ugui >div {
+    float: left;
+    height: 270px;
+    width: 233px;
+    margin-right: 10px;
+    
+}
+
+.intro div .ugui>div>div {
+    width: 228px;
+    height: 270px;
+    background-color: white;
+    
+
+}
+
+.ugui div>div .pic {
+    width: 228px;
+    height: 155px;
+    
+
+}
+
+.ugui div>div>a>h4 {
+
+    margin: 22px 20px 17px 25px;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    height: 32px;
+}
+
+.ugui div>div>div {
+    height: 12px;
+    font-size: 12px;
+    background-color: transparent;
+    margin-left: 25px;
+}
+
+.ugui div>div>div>h4 {
+    color: #ff7c2d;
+    float: left;
+    margin-right: 10px;
+}
+
+.ugui div>div>div>h5 {
+    color: #606060;
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.ugui div>div>div h3 {
+    font-size: 12px;
+    color: #606060;
+    float: left;
+
+}
+
+.end{
+    margin-top: 40px;
+    background-color:white;
+    height: 420px;
+}
+
+.end>div{
+    margin: 0px auto;
+    
+    width: 1200px;
+}
+.end>div .xuecheng{
+    padding-top: 33px;
+    width:500px;
+    line-height: 18px;
+    float: left;
+}
+
+.end>div .xuecheng p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    width: 425px;
+    
+}
+.end>div .xuecheng input{
+    height: 36px;
+    width: 120px;
+    background-color: white;
+    font-size: 16px;
+    color: #00a4ff;
+    border-top: 1px #00a4ff solid;
+    border-bottom: 1px #00a4ff solid;
+    border-left: 1px transparent solid;
+    border-right: 1px transparent solid;
+}
+
+.end>div .about{
+    width: 100px;
+    margin-left: 130px;
+    padding-top: 30px;
+    float: left;
+}
+.end>div .about dt{
+    
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 9px;
+}
+
+.end>div .about dd {
+
+    font-size: 12px;
+    line-height: 22px;
+    color: #333333;
+    
+}

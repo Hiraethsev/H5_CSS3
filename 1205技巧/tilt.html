@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 120px;
+            height: 20px;
+            margin: 50px auto;
+            border: 1px solid red;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+        .box .price{
+            position: relative;
+            float: left;
+            width: 65px;
+            height: 100%;
+            padding-left: 2px;
+            background-color: red;
+            color: #fff;
+
+        }
+        .box .price i{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 0;
+            width: 0;
+            border-color:transparent #fff transparent transparent ;
+            border-style: solid;
+            border-width: 20px 8px 0px 0px;
+
+        }
+        .box .origin{
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="price">￥2099.00
+            <i></i>
+        </span>
+        <span class="origin">￥2649.00</span>
+    </div>
+</body>
+</html>

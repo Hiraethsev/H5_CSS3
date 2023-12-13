@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            /* 不能设置在*里面，那个是所有元素 */
+            background-color: #f3f5f2;
+        }
+        .one{
+            display: inline-block;
+            width: 298px;
+            height: 415px;
+            background-color: white;
+            margin: 30px;
+            
+        }
+        span p{
+            margin: 30px 30px 0px;
+            font-size: 14px;
+            height: 70px;
+            /* 高度固定来防止文字数量的不一样 */
+            /* 左右可以用padding，因为在这里没有宽度值设定不会撑开盒子 */
+        }
+        .review{
+            display: block;
+            font-size: 12px;
+            margin: 0px 30px 10px;
+            color: gray;
+        }
+
+        span img{
+            /* 设置宽度和父亲一样宽 父亲的宽度修改时就不用修改了 */
+            width: 100%;
+        }
+        .redmi{
+            text-decoration: none;
+            color: black;
+            margin: 0px 30px;
+            font-size: 12px;
+           
+        }
+
+        .value{
+            color: orange;
+           
+            padding: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>热评商品</div>
+    <div>
+        <span class="one">      
+         <img src="images/img.jpg">
+         <p>快递牛，整体不错，蓝牙可以说秒连，红米给力</p>
+         <span class="review">来自117384232的评价</span>
+         <a href="#"class="redmi">Redmi AirDots真无线蓝...</a>   
+         <span style="color: gray;">|</span>
+         <span class="value">99.9元</span>
+        
+        </span>
+
+
+    </div>
+
+
+</body>
+</html>

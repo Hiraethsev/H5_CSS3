@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇奇怪怪的注册页面</title>
+</head>
+<body>
+    <h3>注册页面</h3>
+    <form action="ur.php" method="post" name="survey">
+        <table width="500">
+
+        <tr>
+        <th>性别</th> 
+
+        <td><input type="radio" name="sex" id="male" checked="checked"><label for="male"><img src="man.jpg">男</label>
+
+        <input type="radio" name="sex" id="female"><label for="female"><img src="women.jpg">女</label></td>
+        </tr>
+
+        <tr>
+        <th>生日</th>
+        <td><select>
+            <option>--请选择年份--</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+        </select>
+
+        <select>
+            <option>--请选择月份--</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+
+       <select>
+            <option>--请选择日期--</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select></td>
+
+        
+    </tr>
+
+    <tr>
+        <th>所在地区</th>
+        <td><input type="text" value="北京"></td>
+    </tr>
+
+    <tr>
+        <th>婚姻状况</th>
+        <td><input type="radio" name="marriage"id="unmarried" checked="checked"><label for="unmarried">未婚</label>
+
+        <input type="radio" name="marriage" id="married"><label for="married">已婚</label>
+
+        <input type="radio" name="marriage" id="divorce"><label for="divorce">离异</label></td>
+    </tr>
+
+    <tr>
+        <th>学历</th>
+        <td><input type="text" value="本科"></td>
+    </tr>
+
+    <tr>
+        <th>爱好</th>
+        <td><input type="checkbox" name="hobby" id="music"><label for="music">听歌</label>
+
+        <input type="checkbox" name="hobby" id="sports"><label for="sports">运动</label>
+
+        <input type="checkbox" name="hobby" id="draw"><label for="draw">画画</label></td>
+    </tr>
+
+    <tr>    
+        <th>自我介绍</th>
+        <td><textarea>自我介绍</textarea></td>
+    </tr>
+
+    <tr>
+        <th></th>
+        <td><input type="reset" value="重新输入">&nbsp;<input type="submit" value="免费注册"></td>
+    </tr>
+    
+
+    <tr>
+        <th></th>
+        <td><input type="checkbox" name="agree" id="agree" checked="checked"><label for="agree">我同意注册条款和会员加入标准</label></td>
+    </tr>
+
+    <tr>
+        <th></th>
+        <td><a href="#">我是会员，立即登录</a></td>
+    </tr>
+  
+
+    <tr>
+        <th></th>
+        <td>
+            <h4>我承诺</h4>
+        <ul>
+            <li>承诺1</li>
+            <li>承诺2</li>
+            <li>承诺3</li>
+            <li>承诺4</li>
+        </ul>
+        </td>
+    </tr>
+   </table>
+        
+
+    </form>
+    
+</body>
+</html>
